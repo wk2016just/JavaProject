@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-controller>
+	<action>
+		<name>login</name>
+		<class>
+			<name>action.LoginAction</name>
+			<method>login</method>
+		</class>
+		<result>
+			<name>success</name>
+			<type>forward</type>
+			<value>success.jsp</value>
+		</result>
+		<result>
+			<name>fail</name>
+			<type>redirect</type>
+			<value>fail.jsp</value>
+		</result>
+	</action>
+</action-controller>

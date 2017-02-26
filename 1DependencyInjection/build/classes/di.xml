@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependency-mappings>
+	<bean>
+		<name>user</name>
+		<class>model.UserBean</class>
+		<property>
+			<name>userId</name>
+		</property>
+		<property>
+			<name>userName</name>
+		</property>
+		<property>
+			<name>userPass</name>
+		</property>
+	</bean>
+	<bean>
+		<name>loginAction</name>
+		<class>action.LoginAction</class>
+		<property>
+			<name>userBean</name>
+			<ref-class>user</ref-class>
+		</property>
+	</bean>
+</dependency-mappings>
